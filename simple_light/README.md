@@ -29,3 +29,6 @@
                                ......
                                WiFi connected
                                MAC address XX:XX:XX:XX:XX:XX
+                               
+8. Open Diana app on your smartphone and click on the Scan tab to perform search for WiFi devices.
+9. Click on the ADD button beside MAC address which matches with the MAC address on serial monitor and set the new device name as 'ESPLED'.
