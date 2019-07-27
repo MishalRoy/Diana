@@ -22,6 +22,10 @@
                               //Message to turn off builtin_Led
                               String message_off="LEDOFF";
                               
-5. Upload the project into ESP8266.
+5. Upload the project to ESP8266.
 6. Connect your smartphone to the Wifi router or turn on the hotspot on your smartphone.
-7. Open serial monitor. If ESP8266 successfully connects to WiFi router or mobile hotspot, you will see its MAC address on serial monitor.
+7. Open serial monitor. If ESP8266 successfully connects to the WiFi router or mobile hotspot, you will see its MAC address on serial monitor.
+
+                               ......
+                               WiFi connected
+                               MAC address XX:XX:XX:XX:XX:XX
