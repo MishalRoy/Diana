@@ -6,9 +6,9 @@ const char* ssid = "";
 const char* password = "";
 
 //Message to turn on builtin_Led
-String message_on="LEDON";
+String message_on="";
 //Message to turn off builtin_Led
-String message_off="LEDOFF";
+String message_off="";
  
 WiFiServer server(80);
  
@@ -21,7 +21,7 @@ void setup() {
  pinMode(LED_BUILTIN, OUTPUT);
  digitalWrite(LED_BUILTIN, HIGH);
   
-  // Connect to WiFi network
+ 
   Serial.println();
   Serial.println();
   Serial.print("Connecting to ");
@@ -36,7 +36,7 @@ void setup() {
   Serial.println("");
   Serial.println("WiFi connected");
  
-  // Start the server
+  
   server.begin();
   Serial.println("MAC address "+WiFi.macAddress());
  
@@ -45,24 +45,24 @@ void setup() {
 }
  
 void loop() {
-  // Check if a client has connected
+ 
   WiFiClient client = server.available();
   if (!client) {
     return;
   }
  
-  // Wait until the client sends some data
+ 
   
   while(!client.available()){
     delay(1);
   }
  
-  // Read the first line of the request
+  
   String request = client.readStringUntil('\r');
   
   client.flush();
  
-  // Match the request
+  
  
  
   if (request.indexOf("/"+message_on) != -1) {
