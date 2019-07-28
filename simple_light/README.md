@@ -44,3 +44,5 @@
 ![Image](PM_1.png) ![Image](PM_12.png)
 
 12. Click on Diana tab and say 'Diana'. Once 'Listening' is visible , say 'turn on' to turn on builtin LED.
+
+![Image](Listening.png) ![Image](turn_on.png)
