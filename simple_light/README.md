@@ -15,7 +15,7 @@
                              //Wifi password
                              const char* password = "********";
 
-4. Enter message 'LEDON' into string variable message_on to turn on builtin LED and 'LEDOFF' into string variable message_off to turn off builtin LED.
+4. Enter message 'LEDON' into string variable message_on and 'LEDOFF' into string variable message_off. ( These messages will be received by ESP8266 from Diana App to turn on and turn off builtin LED ).
 
                               //Message to turn on builtin_Led
                               String message_on="LEDON";
@@ -36,3 +36,11 @@
 ![Image](Scan.png)
 
 10. Go to Devices and click on ESPLED. Next, click on the Floating Add Button at bottom right to add new voice phrase and message.
+
+![Image](Devices.png) ![Image](ESPLED_blank.png)
+
+11. Set phrase as 'turn on' and message as 'LEDON' and click on ADD. Similarly, create 'turn off' phrase and 'LEDOFF' message.
+
+![Image](PM_1.png) ![Image](PM_12.png)
+
+12. Click on Diana tab and say 'Diana'. Once 'Listening' is visible , say 'turn on' to turn on builtin LED.
